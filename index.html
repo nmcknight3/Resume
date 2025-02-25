@@ -1,170 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Requested change: Added meta description for SEO -->
+    <meta name="description" content="Resume of Nathan D. McKnight – Information Security Generalist based in Carmel, IN.">
     <title>Nathan D. McKnight - Resume</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            background: url('nature-bg.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-            position: relative;
-        }
-        body::before { 
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(80, 120, 140, 0.2);
-            z-index: -1;
-        }
-        header {
-            text-align: center;
-            color: #ffffff;
-            padding: 40px 20px;
-            margin-bottom: 35px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        h1 { font-size: 3em; margin: 0; }
-        header p { margin: 12px 0; font-size: 1.3em; }
-        .social-icons { 
-            margin-top: 15px; /* Space above icons */
-        }
-        .social-icons a { 
-            margin: 0 10px; /* Space between icons */
-            display: inline-block; 
-        }
-        .social-icons svg { 
-            width: 30px; /* Icon size */
-            height: 30px; 
-            fill: #26A69A; /* Turquoise */
-            transition: fill 0.3s; /* Smooth hover */
-        }
-        .social-icons a:hover svg { 
-            fill: #80CBC4; /* Lighter teal on hover */
-        }
-        h2 { 
-            font-size: 1.8em; 
-            color: #004D40; 
-            border-bottom: 2px solid #26A69A; 
-            padding-bottom: 5px; 
-            margin-bottom: 15px; 
-        }
-        h3 { font-size: 1.2em; margin-bottom: 5px; color: #004D40; }
-        ul { 
-            margin: 15px 0; 
-            padding-left: 30px; 
-            list-style: square; 
-        }
-        li { 
-            margin-bottom: 12px; 
-            line-height: 1.8; 
-        }
-        a { color: #26A69A; text-decoration: none; }
-        a:hover { text-decoration: underline; color: #80CBC4; }
-        .section { 
-            margin-bottom: 40px; 
-            background: rgba(255, 255, 255, 0.95); 
-            padding: 20px; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-            border-left: 4px solid #26A69A; 
-        }
-        .job { margin-bottom: 20px; }
-        @media (max-width: 600px) {
-            body { padding: 15px; }
-            h1 { font-size: 2.2em; }
-            h2 { font-size: 1.5em; }
-            .section { padding: 15px; }
-            header p { font-size: 1.1em; margin: 8px 0; }
-            header { padding: 30px 15px; }
-            li { margin-bottom: 10px; line-height: 1.6; }
-            .social-icons svg { width: 25px; height: 25px; }
-        }
+      /* General body styling */
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+        /* Requested change: Update background image if needed */
+        background: url('new-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+        position: relative;
+      }
+      body::before { 
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(80, 120, 140, 0.2);
+        z-index: -1;
+      }
+      header {
+        text-align: center;
+        color: #ffffff;
+        padding: 40px 20px;
+        margin-bottom: 35px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      h1 { font-size: 3em; margin: 0; }
+      header p { margin: 12px 0; font-size: 1.3em; }
+      .social-icons { 
+        margin-top: 15px;
+      }
+      .social-icons a { 
+        margin: 0 10px;
+        display: inline-block; 
+      }
+      .social-icons svg { 
+        width: 30px;
+        height: 30px;
+        fill: #26A69A;
+        transition: fill 0.3s;
+      }
+      .social-icons a:hover svg { 
+        fill: #80CBC4;
+      }
+      h2 { 
+        font-size: 1.8em; 
+        color: #004D40; 
+        border-bottom: 2px solid #26A69A; 
+        padding-bottom: 5px; 
+        margin-bottom: 15px; 
+      }
+      h3 { font-size: 1.2em; margin-bottom: 5px; color: #004D40; }
+      ul { 
+        margin: 15px 0; 
+        padding-left: 30px; 
+        list-style: square; 
+      }
+      li { 
+        margin-bottom: 12px; 
+        line-height: 1.8; 
+      }
+      a { color: #26A69A; text-decoration: none; }
+      a:hover { text-decoration: underline; color: #80CBC4; }
+      .section { 
+        margin-bottom: 40px; 
+        background: rgba(255, 255, 255, 0.95); 
+        padding: 20px; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+        border-left: 4px solid #26A69A; 
+      }
+      .job { margin-bottom: 20px; }
+      @media (max-width: 600px) {
+        body { padding: 15px; }
+        h1 { font-size: 2.2em; }
+        h2 { font-size: 1.5em; }
+        .section { padding: 15px; }
+        header p { font-size: 1.1em; margin: 8px 0; }
+        header { padding: 30px 15px; }
+        li { margin-bottom: 10px; line-height: 1.6; }
+        .social-icons svg { width: 25px; height: 25px; }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Nathan D. McKnight</h1>
-        <p>Carmel, IN | (317) 645-6919 | <a href="mailto:natemcknight79@gmail.com">natemcknight79@gmail.com</a> | <a href="https://www.linkedin.com/in/n-mcknight" target="_blank">linkedin.com/in/n-mcknight</a></p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/n-mcknight/" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4h-3v-9h3v1.1c.9-1 2.2-1.6 3.6-1.6 2.8 0 4.4 1.9 4.4 4.5z"/></svg>
-            </a>
-            <a href="https://github.com/nmcknight3" target="_blank">
-                <svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 002 12c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.6.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 .7 2.6 1 3.2.8.1-.7.4-1.3.7-1.6-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1.2-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 2.9 1.1a10 10 0 015.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.5.2 2.6.1 2.9.8.7 1.2 1.7 1.2 2.9 0 4.2-2.6 5.1-5.1 5.4.4.3.7 1 .7 1.6v1.7c0 .3.2.6.7.5A10 10 0 0022 12 10 10 0 0012 2z"/></svg>
-            </a>
-        </div>
+      <h1>Nathan D. McKnight</h1>
+      <p>
+        Carmel, IN | (317) 645-6919 | 
+        <a href="mailto:natemcknight79@gmail.com" target="_blank">natemcknight79@gmail.com</a>
+        <!-- Requested change: Update contact details if necessary -->
+      </p>
+      <div class="social-icons">
+        <a href="mailto:natemcknight79@gmail.com" target="_blank" aria-label="Email">
+          <svg viewBox="0 0 24 24">
+            <path d="M22 4H2a2 2 0 00-2 2v12a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zm-1.4 2L12 11.6 3.4 6H20.6zM2 18V7.4l10 6.6 10-6.6V18H2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/n-mcknight/" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.25 6.5 1.75 1.75 0 016.5 8.25zM19 19h-3v-4c0-1.1-.9-2-2-2s-2 .9-2 2v4h-3v-9h3v1.1c.9-1 2.2-1.6 3.6-1.6 2.8 0 4.4 1.9 4.4 4.5z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/nmcknight3" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2A10 10 0 002 12c0 4.4 2.9 8.1 6.9 9.4.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.6.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 .7 2.6 1 3.2.8.1-.7.4-1.3.7-1.6-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1.2-2.9-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 2.9 1.1a10 10 0 015.2 0c2-1.4 2.9-1.1 2.9-1.1.6 1.5.2 2.6.1 2.9.8.7 1.2 1.7 1.2 2.9 0 4.2-2.6 5.1-5.1 5.4.4.3.7 1 .7 1.6v1.7c0 .3.2.6.7.5A10 10 0 0022 12 10 10 0 0012 2z"/>
+          </svg>
+        </a>
+      </div>
     </header>
-
-    <div class="section">
+    <main>
+      <div class="section">
         <h2>Professional Summary</h2>
-        <p>Information Security Generalist with 2.5 years of specialized experience troubleshooting, configuring, optimizing, and deploying SonicWall, Fortinet, Sophos, and WatchGuard devices. Experienced in network design—full mesh to hub-and-spoke, implementing resilient and secure data transport, and collaborating with stakeholders to ensure smooth transitions and operational compliance. Currently pursuing a Bachelor of Science in Networking and Security to enhance problem-solving skillsets valuable for modern and future IT business needs.</p>
-    </div>
+        <p>
+          Information Security Generalist with 2.5 years of specialized experience troubleshooting, configuring, optimizing, and deploying SonicWall, Fortinet, Sophos, and WatchGuard devices. 
+          <!-- Requested change: Update or modify summary content as needed -->
+          Experienced in network design—from full mesh to hub-and-spoke—implementing resilient and secure data transport, and collaborating with stakeholders to ensure smooth transitions and operational compliance. Currently pursuing a Bachelor of Science in Networking and Security to further enhance skills for modern IT business needs.
+        </p>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2>Experience</h2>
         <div class="job">
-            <h3>Firewalls.com | Indianapolis, IN</h3>
-            <p><em>Network Security Engineer / PM | 7/2023 - 7/2024</em></p>
-            <ul>
-                <li>Managed projects: Provided support by coordinating meetings, conducting network and security analyses, creating firewall configurations, and overseeing product deployments.</li>
-                <li>Configured resilient networks: Consulted on and implemented advanced networking features such as dynamic routing, link monitoring, load balancing, High Availability, SD-WAN, QoS, ADVPN, and NGFW security features to optimize network performance and reliability.</li>
-                <li>Consulted on features and solutions: Assisted the sales team by providing technical consultation and identifying networking and security solutions to address client needs.</li>
-                <li>Designed networks: Developed physical and logical network topologies incorporating redundancy to ensure high availability, fault tolerance, and uninterrupted network performance.</li>
-                <li>Optimized processes: Developed configuration scripts, saving time and cost—streamlined workflows and reduced manual intervention.</li>
-                <li>Took initiative: Spearheaded initiatives to optimize firewall configurations, enhancing network performance and strengthening security posture. Designed public-facing company forms and integrated solutions for scheduling and ticketing within the CRM platform.</li>
-            </ul>
+          <h3>Firewalls.com | Indianapolis, IN</h3>
+          <p><em>Network Security Engineer / PM | 7/2023 - 7/2024</em></p>
+          <ul>
+            <li>Managed projects: Coordinated meetings, conducted network and security analyses, created firewall configurations, and oversaw product deployments.</li>
+            <li>Configured resilient networks: Implemented dynamic routing, link monitoring, load balancing, High Availability, SD-WAN, QoS, ADVPN, and NGFW security features to optimize performance.</li>
+            <li>Consulted on solutions: Provided technical guidance to the sales team, identifying tailored networking and security solutions.</li>
+            <li>Designed networks: Developed physical and logical network topologies with redundancy to ensure high availability and fault tolerance.</li>
+            <li>Optimized processes: Automated configuration scripts to streamline workflows and reduce manual intervention.</li>
+            <li>Initiated improvements: Enhanced firewall configurations and created integrated solutions for scheduling and ticketing within the CRM platform.</li>
+          </ul>
         </div>
         <div class="job">
-            <p><em>Escalations Team Lead | 3/2022 - 7/2023</em></p>
-            <ul>
-                <li>Led the support team: Assisted with customer requests requiring escalation for configuration changes, troubleshooting, network maintenance, incident response, and hardware replacements.</li>
-                <li>Utilized networking and security concepts: Applied practical knowledge of enterprise networking: LAN, WAN, DMZ, DNS, DHCP, VPN, MFA, routing, link aggregation, 802.1x, high availability, SD-WAN, antivirus, sandboxing, IDS/IPS, app control, and content filtering.</li>
-                <li>Responded to cyber incidents: Analyzed firewall dashboards, logs, alerts, and reports to identify and contain threats; alerted stakeholders.</li>
-                <li>Contributed to the knowledge base: Expanded Firewalls.com’s knowledge base by authoring how-to guides and troubleshooting procedures.</li>
-                <li>Created educational content: Produced firewall tutorials for Firewalls.com’s YouTube channel, enhancing user understanding of next-generation firewall technologies.</li>
-            </ul>
+          <p><em>Escalations Team Lead | 3/2022 - 7/2023</em></p>
+          <ul>
+            <li>Led support team: Addressed escalated customer requests involving configuration changes, troubleshooting, network maintenance, incident response, and hardware replacements.</li>
+            <li>Utilized networking expertise: Applied practical knowledge of LAN, WAN, DMZ, DNS, DHCP, VPN, MFA, routing, link aggregation, 802.1x, high availability, SD-WAN, antivirus, sandboxing, IDS/IPS, app control, and content filtering.</li>
+            <li>Responded to cyber incidents: Analyzed dashboards, logs, alerts, and reports to identify and mitigate threats while keeping stakeholders informed.</li>
+            <li>Expanded the knowledge base: Authored how-to guides and troubleshooting procedures for Firewalls.com’s internal resources.</li>
+            <li>Developed educational content: Produced tutorials for Firewalls.com’s YouTube channel to improve user understanding of next-generation firewall technologies.</li>
+          </ul>
         </div>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2>Certifications</h2>
         <ul>
-            <li>CCNA</li>
-            <li>CompTIA A+</li>
-            <li>CompTIA Network+</li>
-            <li>CompTIA Security+</li>
-            <li>Fortinet NSE4</li>
-            <li>Fortinet NSE7</li>
-            <li>SonicWALL Network Security Professional</li>
-            <li>Sophos Certified Technician</li>
-            <li>Watchguard Firebox</li>
-            <li>Microsoft Entra ID administration</li>
-            <li>Cloud + (pending)</li>
+          <li>CCNA</li>
+          <li>CompTIA A+</li>
+          <li>CompTIA Network+</li>
+          <li>CompTIA Security+</li>
+          <li>Fortinet NSE4</li>
+          <li>Fortinet NSE7</li>
+          <li>SonicWALL Network Security Professional</li>
+          <li>Sophos Certified Technician</li>
+          <li>Watchguard Firebox</li>
+          <li>Microsoft Entra ID Administration</li>
+          <li>Cloud+ (pending)</li>
         </ul>
-    </div>
+      </div>
 
-    <div class="section">
+      <div class="section">
         <h2>Education</h2>
         <div class="job">
-            <h3>Bachelor of Science: Networking and Security (In Progress)</h3>
-            <p>Western Governors University, Salt Lake City, UT | Expected Graduation: 2026</p>
-            <p>Relevant Coursework: Cloud Applications, IT Applications, Implementing and Administering Cisco Solutions, Network Analytics and Troubleshooting, Telecomm and Wireless Communications</p>
+          <h3>Bachelor of Science: Networking and Security (In Progress)</h3>
+          <p>Western Governors University, Salt Lake City, UT | Expected Graduation: 2026</p>
+          <p>Relevant Coursework: Cloud Applications, IT Applications, Implementing and Administering Cisco Solutions, Network Analytics and Troubleshooting, Telecomm and Wireless Communications</p>
         </div>
         <div class="job">
-            <h3>Associate of Science: Cyber Security and Information Assurance</h3>
-            <p>Ivy Tech Community College, Indianapolis, IN | Graduated: 2021</p>
-            <p>Relevant Coursework: Networking Fundamentals, Networking II, Network Protocol Analysis, Perimeter Defense, Ethical Hacking</p>
+          <h3>Associate of Science: Cyber Security and Information Assurance</h3>
+          <p>Ivy Tech Community College, Indianapolis, IN | Graduated: 2021</p>
+          <p>Relevant Coursework: Networking Fundamentals, Networking II, Network Protocol Analysis, Perimeter Defense, Ethical Hacking</p>
         </div>
-    </div>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
+
