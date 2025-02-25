@@ -11,52 +11,52 @@
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            background: url('nature-bg.jpg') no-repeat center center fixed; /* Ocean image */
-            background-size: cover;
+            background: url('/nature-bg.jpg') no-repeat center center fixed; /* Nature image */
+            background-size: cover; /* Full coverage */
             color: #333;
             position: relative;
         }
-        body::before { 
+        body::before { /* Overlay for readability */
             content: "";
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(80, 120, 140, 0.2); /* Light blue-gray overlay */
+            background: rgba(0, 0, 0, 0.3); /* Dark overlay */
             z-index: -1;
         }
         header {
             text-align: center;
-            background: #00695C; /* Deep teal */
-            color: #ffffff;
+            background: #1a3c66; /* Dark blue */
+            color: #ffffff; /* White text */
             padding: 20px;
             margin-bottom: 25px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-bottom: 3px solid #26A69A; /* Turquoise accent */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            border-bottom: 3px solid #007BFF;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sharpens text */
         }
         h1 { font-size: 2.2em; margin: 0; }
         header p { margin: 5px 0; font-size: 1.1em; }
         h2 { 
             font-size: 1.5em; 
-            color: #004D40; /* Dark teal */
-            border-bottom: 2px solid #26A69A; /* Turquoise */
+            color: #0056b3; 
+            border-bottom: 2px solid #007BFF; 
             padding-bottom: 5px; 
             margin-bottom: 10px; 
         }
-        h3 { font-size: 1.2em; margin-bottom: 5px; color: #004D40; }
+        h3 { font-size: 1.2em; margin-bottom: 5px; color: #1a3c66; }
         ul { margin: 10px 0; padding-left: 25px; list-style: square; }
-        a { color: #26A69A; /* Turquoise links */ text-decoration: none; }
-        a:hover { text-decoration: underline; color: #80CBC4; /* Lighter teal hover */ }
+        a { color: #007BFF; text-decoration: none; }
+        a:hover { text-decoration: underline; color: #ffcc00; }
         .section { 
             margin-bottom: 30px; 
-            background: rgba(255, 255, 255, 0.95); 
+            background: rgba(255, 255, 255, 0.95); /* Near-opaque white */
             padding: 20px; 
             border-radius: 8px; 
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-            border-left: 4px solid #26A69A; /* Turquoise accent */
+            border-left: 4px solid #007BFF; 
         }
         .job { margin-bottom: 15px; }
         @media (max-width: 600px) {
@@ -92,3 +92,48 @@
                 <li>Optimized processes: Developed configuration scripts, saving time and cost—streamlined workflows and reduced manual intervention.</li>
                 <li>Took initiative: Spearheaded initiatives to optimize firewall configurations, enhancing network performance and strengthening security posture. Designed public-facing company forms and integrated solutions for scheduling and ticketing within the CRM platform.</li>
             </ul>
+        </div>
+        <div class="job">
+            <p><em>Escalations Team Lead | 3/2022 - 7/2023</em></p>
+            <ul>
+                <li>Led the support team: Assisted with customer requests requiring escalation for configuration changes, troubleshooting, network maintenance, incident response, and hardware replacements.</li>
+                <li>Utilized networking and security concepts: Applied practical knowledge of enterprise networking: LAN, WAN, DMZ, DNS, DHCP, VPN, MFA, routing, link aggregation, 802.1x, high availability, SD-WAN, antivirus, sandboxing, IDS/IPS, app control, and content filtering.</li>
+                <li>Responded to cyber incidents: Analyzed firewall dashboards, logs, alerts, and reports to identify and contain threats; alerted stakeholders.</li>
+                <li>Contributed to the knowledge base: Expanded Firewalls.com’s knowledge base by authoring how-to guides and troubleshooting procedures.</li>
+                <li>Created educational content: Produced firewall tutorials for Firewalls.com’s YouTube channel, enhancing user understanding of next-generation firewall technologies.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>CCNA</li>
+            <li>CompTIA A+</li>
+            <li>CompTIA Network+</li>
+            <li>CompTIA Security+</li>
+            <li>Fortinet NSE4</li>
+            <li>Fortinet NSE7</li>
+            <li>SonicWALL Network Security Professional</li>
+            <li>Sophos Certified Technician</li>
+            <li>Watchguard Firebox</li>
+            <li>Microsoft Entra ID administration</li>
+            <li>Cloud + (pending)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <div class="job">
+            <h3>Bachelor of Science: Networking and Security (In Progress)</h3>
+            <p>Western Governors University, Salt Lake City, UT | Expected Graduation: 2026</p>
+            <p>Relevant Coursework: Cloud Applications, IT Applications, Implementing and Administering Cisco Solutions, Network Analytics and Troubleshooting, Telecomm and Wireless Communications</p>
+        </div>
+        <div class="job">
+            <h3>Associate of Science: Cyber Security and Information Assurance</h3>
+            <p>Ivy Tech Community College, Indianapolis, IN | Graduated: 2021</p>
+            <p>Relevant Coursework: Networking Fundamentals, Networking II, Network Protocol Analysis, Perimeter Defense, Ethical Hacking</p>
+        </div>
+    </div>
+</body>
+</html>
